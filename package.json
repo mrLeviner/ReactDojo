@@ -6,9 +6,11 @@
     "node-sass": "^4.10.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
+    "react-famous": "^0.1.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "react-three": "^0.9.7",
+    "react-webgl-globe-basic-example": "0.0.2",
     "source-map-explorer": "^1.6.0",
     "three": "^0.98.0",
     "typed.js": "^2.0.9"

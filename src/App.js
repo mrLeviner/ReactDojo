@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import { TypedReactDemo } from './Typed.js';
-import logo from './logo.svg';
+import Countdown from './Countdown.js';
+import prettymomma from './pretty_momma.png';
 import heartbeat from './heartbeat.jpeg';
 import './App.scss';
 
@@ -15,27 +15,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={prettymomma} className="App-logo pulse" alt="logo" />
           <img src={heartbeat} className="App-heartbeat" alt="heartbeat" />
-          {/* <TypedReactDemo
-            strings={[
-              'Some <i>strings</i> are slanted',
-              'Some <strong>strings</strong> are bold',
-              'HTML characters &times; &copy;'
-            ]}
-          />, */}
-          <p>
-            Round 1: First edits made to <code>src/App.js</code>.
-          </p>
-          {/* rel=noopener & rel=noreferrer
-              https://developers.google.com/web/tools/lighthouse/audits/noopener */}
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer">
-            Learn React
-          </a>
+          <div className="title">
+            <em>Baby Leviner is ON THE WAY!!!</em>
+          </div>
+          <Countdown date={`2019-04-30T00:00:00`} />
         </header>
       </div>
     );

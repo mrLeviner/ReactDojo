@@ -22,6 +22,14 @@ export class TypedReactDemo extends Component {
     this.typed.destroy();
   }
 
+  /* <TypedReactDemo
+              strings={[
+                'Some <i>strings</i> are slanted',
+                'Some <strong>strings</strong> are bold',
+                'HTML characters &times; &copy;'
+              ]}
+            />, */
+
   render() {
     return (
       <div className="wrap">
