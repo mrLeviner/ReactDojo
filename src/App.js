@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import heartbeat from './heartbeat.jpeg';
 import './App.scss';
 
 /* If the use of global variables defined in script tags in html files
@@ -14,6 +15,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <img src={heartbeat} className="App-heartbeat" alt="heartbeat" />
           <p>
             Round 1: First edits made to <code>src/App.js</code>.
           </p>
@@ -23,8 +25,7 @@ class App extends Component {
             className="App-link"
             href="https://reactjs.org"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             Learn React
           </a>
         </header>
