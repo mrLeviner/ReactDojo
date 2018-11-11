@@ -11,6 +11,8 @@ class App extends Component {
           <p>
             Round 1: First edits made to <code>src/App.js</code>.
           </p>
+          {/* rel=noopener & rel=noreferrer
+              https://developers.google.com/web/tools/lighthouse/audits/noopener */}
           <a
             className="App-link"
             href="https://reactjs.org"
