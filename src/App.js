@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 
+/* If the use of global variables defined in script tags in html files
+  is desired, you can circumvent the linter by reading the variable
+  explicitly from the window object (ex: const $ = window.$;).
+  Alternatively, you can force the linter to ignore any line by adding
+  the comment // eslint-disable-line after it. */
+
 class App extends Component {
   render() {
     return (
