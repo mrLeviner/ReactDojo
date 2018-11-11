@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { TypedReactDemo } from './Typed.js';
 import logo from './logo.svg';
 import heartbeat from './heartbeat.jpeg';
 import './App.scss';
@@ -16,6 +17,13 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <img src={heartbeat} className="App-heartbeat" alt="heartbeat" />
+          {/* <TypedReactDemo
+            strings={[
+              'Some <i>strings</i> are slanted',
+              'Some <strong>strings</strong> are bold',
+              'HTML characters &times; &copy;'
+            ]}
+          />, */}
           <p>
             Round 1: First edits made to <code>src/App.js</code>.
           </p>
