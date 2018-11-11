@@ -5,9 +5,11 @@
   "dependencies": {
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "source-map-explorer": "^1.6.0"
   },
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "start": "react-scripts start",
