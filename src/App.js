@@ -18,7 +18,7 @@ class App extends Component {
           <img src={prettymomma} className="App-logo pulse" alt="logo" />
           <img src={heartbeat} className="App-heartbeat" alt="heartbeat" />
           <div className="title">
-            <em>Baby Leviner is ON THE WAY!!!</em>
+            <em>Baby Leviner is due on May 31, 2019, in only</em>
           </div>
           <Countdown date={`2019-05-31T00:00:00`} />
         </header>
