@@ -20,7 +20,7 @@ class App extends Component {
           <div className="title">
             <em>Baby Leviner is ON THE WAY!!!</em>
           </div>
-          <Countdown date={`2019-04-30T00:00:00`} />
+          <Countdown date={`2019-05-31T00:00:00`} />
         </header>
       </div>
     );
