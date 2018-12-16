@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// https://github.com/jstejada/react-typist
 import Typist from 'react-typist';
 import Countdown from './Countdown.js';
 import prettymomma from './pretty_momma.png';
