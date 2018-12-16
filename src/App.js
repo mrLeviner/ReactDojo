@@ -13,6 +13,7 @@ import './assets/fonts/font-awesome-4.2.0/css/font-awesome.min.css';
   - Run npm-home {package-name} to view the package homepage. Add -g to view
     the GitHub page. Ex: npm-home lodash, npm-home lodash -g
   - Force linter to ignore a line by adding // eslint-disable-line after it.
+  - Test connection to GitHub account
  */
 
 class App extends Component {
