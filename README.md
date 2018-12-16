@@ -42,3 +42,46 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+<!--
+Example of a custom init file:
+
+/* BEGIN INIT FILE */
+var USER = process.env.GITHUB_USERNAME || 'YOUR_GITHUB_USERNAME';
+var cp = require('child_process');
+var priv;
+
+module.exports = {
+  name: prompt('name', basename || package.name),
+  version: '0.0.1',
+  // Sets repo to private
+  private: prompt('private', 'true', function(val){
+    return priv = (typeof val === 'boolean') ? val : !!val.match('true')
+  }),
+  create: prompt('create github repo', 'yes', function(val){
+    val = val.indexOf('y') !== -1 ? true : false;
+
+    if(val){
+      console.log('enter github password:');
+      cp.execSync("curl -u '"+USER+"' https://api.github.com/user/repos -d " +
+        "'{\"name\": \""+basename+"\", \"private\": "+ ((priv) ? 'true' : 'false')  +"}' ");
+      cp.execSync('git remote add origin '+ 'https://github.com/'+USER+'/' + basename + '.git');
+    }
+
+    return undefined;
+  }),
+  main: prompt('entry point', 'index.js'),
+  repository: {
+    type: 'git',
+    url: 'git://github.com/'+USER+'/' + basename + '.git'
+  },
+  bugs: { url: 'https://github.com/'+USER'/' + basename + '/issues' },
+  homepage: "https://github.com/"+USER+"/" + basename,
+  keywords: prompt(function (s) { return s.split(/\s+/) }),
+  license: 'MIT',
+  cleanup: function(cb) {
+    cb(null, undefined)
+  }
+}
+/* END INIT FILE */
+ -->
