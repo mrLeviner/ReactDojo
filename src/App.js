@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-// https://github.com/jstejada/react-typist
 import Typist from 'react-typist';
 import Countdown from './Countdown.js';
-import prettymomma from './images/pretty_momma.png';
-import heartbeat from './images/heartbeat.jpeg';
+import prettymomma from './assets/images/pretty_momma.png';
+import heartbeat from './assets/images/heartbeat.jpeg';
 import './App.scss';
 import './styles.css';
-import './fonts/font-awesome-4.2.0/css/font-awesome.min.css';
+import './assets/fonts/font-awesome-4.2.0/css/font-awesome.min.css';
 // import SideBar from './sidebar';
 // import SemanticSidebar from './SemanticSidebar.js';
 
-// Force linter to ignore a line by adding the comment // eslint-disable-line after it.
+/*
+  - Run npm-home {package-name} to view the package homepage. Add -g to view
+    the GitHub page. Ex: npm-home lodash, npm-home lodash -g
+  - Force linter to ignore a line by adding // eslint-disable-line after it.
+ */
 
 class App extends Component {
   render() {

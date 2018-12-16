@@ -10,7 +10,7 @@ import {
   Grid
 } from 'semantic-ui-react';
 // import FloatedButton from './FloatedButton';
-import './fonts/font-awesome-4.2.0/css/font-awesome.min.css';
+import './assets/fonts/font-awesome-4.2.0/css/font-awesome.min.css';
 
 const HorizontalSidebar = ({ animation, direction, visible }) => (
   <Sidebar
