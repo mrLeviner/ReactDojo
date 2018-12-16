@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // https://github.com/jstejada/react-typist
 import Typist from 'react-typist';
 import Countdown from './Countdown.js';
-import prettymomma from './pretty_momma.png';
-import heartbeat from './heartbeat.jpeg';
+import prettymomma from './images/pretty_momma.png';
+import heartbeat from './images/heartbeat.jpeg';
 import './App.scss';
 import './styles.css';
 import './fonts/font-awesome-4.2.0/css/font-awesome.min.css';
