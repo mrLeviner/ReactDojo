@@ -23,7 +23,8 @@ class App extends Component {
         {/* <SideBar pageWrapId={'page-wrap'} outerContainerId={'App'} /> */}
         <div id="page-wrap">
           <header className="App-header">
-            <img src={prettymomma} className="App-logo pulse" alt="logo" />
+            <img src={prettymomma} className="App-logo " alt="logo" />
+            {/* <img src={prettymomma} className="App-logo pulse" alt="logo" /> */}
             <img src={heartbeat} className="App-heartbeat" alt="heartbeat" />
             <div className="title">
               <Typist>
