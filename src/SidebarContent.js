@@ -29,17 +29,17 @@ const SidebarContent = props => {
   const style = props.style
     ? { ...styles.sidebar, ...props.style }
     : styles.sidebar;
+
   const linksText = [
     "Doctor's Appointments",
     'Journal Entries',
     'Questions',
     'Class Schedule'
   ];
-  const numLinks = linksText.length;
-  const links = [];
-  let index = 0;
 
-  for (index = 0; index < numLinks; index++) {
+  const links = [];
+
+  for (let index = 0; index < linksText.length; index++) {
     links.push(
       <a
         key={index}

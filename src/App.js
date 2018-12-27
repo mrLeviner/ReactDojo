@@ -78,15 +78,16 @@ class App extends Component {
             onClick={this.toggleOpen}
             href="https://github.com/balloob/react-sidebar"
             style={styles.contentHeaderMenuLink}>
-            {!this.state.open ? (
-              <div class="bm-burger-button">
-                <span>
-                  <span class="bm-burger-bars" />
-                  <span class="bm-burger-bars" />
-                  <span class="bm-burger-bars" />
-                </span>
-              </div>
-            ) : null}
+            <div
+              className={`bm-burger-button ${
+                this.state.open ? 'fade-out' : 'fade-in'
+              }`.trim()}>
+              <span>
+                <span className="bm-burger-bars" />
+                <span className="bm-burger-bars" />
+                <span className="bm-burger-bars" />
+              </span>
+            </div>
           </a>
         )}
       </span>
