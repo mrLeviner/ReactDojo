@@ -3,7 +3,7 @@ import Sidebar from 'react-sidebar';
 import Typist from 'react-typist';
 import MaterialTitlePanel from './MaterialTitlePanel';
 import SidebarContent from './SidebarContent';
-import Countdown from './Countdown.js';
+import Countdown from './Countdown';
 import prettymomma from './assets/images/pretty_momma.png';
 // import heartbeat from './assets/images/heartbeat.jpeg';
 import './assets/styles/App.scss';
