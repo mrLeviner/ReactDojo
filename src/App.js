@@ -7,6 +7,7 @@ import Countdown from './Countdown.js';
 import prettymomma from './assets/images/pretty_momma.png';
 // import heartbeat from './assets/images/heartbeat.jpeg';
 import './assets/styles/App.scss';
+import './assets/styles/styles.css';
 
 const mql = window.matchMedia(`(min-width: 1400px)`);
 const styles = {
@@ -76,7 +77,14 @@ class App extends Component {
             onClick={this.toggleOpen}
             href="https://github.com/balloob/react-sidebar"
             style={styles.contentHeaderMenuLink}>
-            =
+            <div class="bm-burger-button">
+              <span>
+                <span class="bm-burger-bars" />
+                <span class="bm-burger-bars" />
+                <span class="bm-burger-bars" />
+              </span>
+              <button>Open Menu</button>
+            </div>
           </a>
         )}
       </span>

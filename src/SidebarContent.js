@@ -29,16 +29,23 @@ const SidebarContent = props => {
   const style = props.style
     ? { ...styles.sidebar, ...props.style }
     : styles.sidebar;
-
+  const linksText = [
+    "Doctor's Appointments",
+    'Journal Entries',
+    'Questions',
+    'Class Schedule'
+  ];
+  const numLinks = linksText.length;
   const links = [];
+  let index = 0;
 
-  for (let ind = 0; ind < 10; ind++) {
+  for (index = 0; index < numLinks; index++) {
     links.push(
       <a
-        key={ind}
+        key={index}
         href="https://github.com/balloob/react-sidebar"
         style={styles.sidebarLink}>
-        Mock menu item {ind}
+        {linksText[index]}
       </a>
     );
   }
@@ -50,11 +57,6 @@ const SidebarContent = props => {
           href="https://github.com/balloob/react-sidebar"
           style={styles.sidebarLink}>
           Home
-        </a>
-        <a
-          href="https://github.com/balloob/react-sidebar"
-          style={styles.sidebarLink}>
-          Responsive Example
         </a>
         <div style={styles.divider} />
         {links}
