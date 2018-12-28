@@ -51,6 +51,12 @@ class App extends Component {
     mql.removeListener(this.mediaQueryChanged);
   }
 
+  /*
+    Callback called when the sidebar wants to
+    change the open prop. Happens after sliding
+    the sidebar and when the overlay is clicked
+    when the sidebar is open.
+  */
   onSetOpen(open) {
     this.setState({ open: open });
   }
@@ -98,7 +104,9 @@ class App extends Component {
       docked: this.state.docked,
       open: this.state.open,
       onSetOpen: this.onSetOpen,
-      pullRight: true
+      pullRight: true,
+      touch: true,
+      transitions: true
     };
 
     return (

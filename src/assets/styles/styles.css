@@ -56,12 +56,16 @@ body {
   transition: visibility 0s linear 0s, opacity 600ms;
 }
 
+.bm-burger-button {
+  vertical-align: middle;
+}
+
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   /* background: #373a47; */
   background: #fff;
   position: absolute;
-  height: 20%;
+  height: 14%;
   left: 0;
   right: 0;
   top: 0%;
@@ -70,11 +74,11 @@ body {
 }
 
 .bm-burger-bars + .bm-burger-bars {
-  top: 36%;
+  top: 34%;
 }
 
 .bm-burger-bars + .bm-burger-bars + .bm-burger-bars {
-  top: 72%;
+  top: 68%;
 }
 
 /* Position and sizing of clickable cross button */
@@ -86,6 +90,7 @@ body {
 /* Color/shape of close button cross */
 .bm-cross {
   background: #bdc3c7;
+  z-index: 4;
 }
 
 /* General sidebar styles */
@@ -108,4 +113,14 @@ body {
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.close-sidebar-btn {
+  display: block;
+  /* text-indent: -9999px; */
+  width: 100px;
+  /* height: 100%; */
+  /* height: 82px; */
+  background: url(/src/assets/images/chevron-right.svg);
+  background-size: 100px 82px;
 }
